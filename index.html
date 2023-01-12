@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorts-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="app">
+        <div class="video">
+            <!--header starts-->
+            <div class="videoheader">
+                <span class="material-symbols-outlined">
+                    arrow_back
+                    </span>
+                    <span class="material-symbols-outlined">
+                        photo_camera
+                        </span>
+                <h3>Reels</h3>
+            </div>
+           
+      <video src="v3.mp4" class="video1"></video>
+      <!--Footer Starts-->
+      <div class="videoFooter">
+        <div class="text">
+            <img  class ="user" src="vibo.png" alt="">
+            <h3> Vasu Beri * <button>Follow</button></h3>
+        </div>
+        <div class="ticker">
+            <span class="material-symbols-outlined">
+                music_note
+                </span>
+                <marquee>Radhe Radhe</marquee>
+        </div>
+        <div class="actions">
+            <div class="left">
+                <span class="material-symbols-outlined"> favorite </span>
+                <span class="material-symbols-outlined">  mode_comment </span>
+                <span class="material-symbols-outlined"> send </span>
+                <span class="material-symbols-outlined"> more_horiz </span>
+            </div>
+
+            <div class="right">
+                <div class="stat">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    <p>12</p>
+                </div>
+
+                <div class="stat">
+                    <span class="material-symbols-outlined"> mode_comment </span>
+                    <p>34</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+       
+
+    <div class="video">
+        <!--header starts-->
+        <div class="videoheader">
+            <span class="material-symbols-outlined">
+                arrow_back
+                </span>
+                <span class="material-symbols-outlined">
+                    photo_camera
+                    </span>
+            <h3>Reels</h3>
+        </div>
+       
+  <video src="v4.mp4" class="video1"></video>
+  <!--Footer Starts-->
+  <div class="videoFooter">
+    <div class="text">
+        <img  class ="user" src="vibo.png" alt="">
+        <h3> Vasu Beri * <button>Follow</button></h3>
+    </div>
+    <div class="ticker">
+        <span class="material-symbols-outlined">
+            music_note
+            </span>
+            <marquee>Song Name</marquee>
+    </div>
+    <div class="actions">
+        <div class="left">
+            <span class="material-symbols-outlined"> favorite </span>
+            <span class="material-symbols-outlined">  mode_comment </span>
+            <span class="material-symbols-outlined"> send </span>
+            <span class="material-symbols-outlined"> more_horiz </span>
+        </div>
+
+        <div class="right">
+            <div class="stat">
+                <span class="material-symbols-outlined"> favorite </span>
+                <p>92</p>
+            </div>
+
+            <div class="stat">
+                <span class="material-symbols-outlined"> mode_comment </span>
+                <p>54</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+   
+    </div>
+           <script>
+            const videos = document.querySelectorAll('video');
+            for(const video of videos){
+                video.addEventListener('click',function(){
+               if(video.paused){
+                  video.play();
+               }else{
+                 video.pause();
+               }
+
+                });
+            }
+           </script>
+</body>
+</html>
